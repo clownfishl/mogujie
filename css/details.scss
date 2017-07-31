@@ -1,0 +1,669 @@
+@function num($n){
+	@return $n/20
+}
+html,body{
+	height:100%;
+	background:#f6f6f6;
+}
+*{
+	padding:0;
+	margin:0;
+}
+li{
+	list-style:none;
+}
+@mixin hw($h,$w){
+   height:$h;
+   width:$w;
+}
+#main{
+	height:100%;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	.header{
+		flex:1;
+		margin-bottom:num(43rem);
+	 .d{
+	 	height:num(554rem);
+	    background:#fff;
+	 	margin-bottom:num(8rem);
+	 	.img{
+			 @include hw(num(385rem),num(320rem));
+			 background:url(../img/1.jpg) no-repeat;
+			 background-size:num(320rem) num(385rem);
+			 position:relative;
+			 .dson{
+			 	@include hw(num(16rem),num(47rem));
+			 	color:#fff;
+			 	font-size:num(10rem);
+			 	text-align:center;
+			 	line-height:num(16rem);
+			 	background:rgba(73,66,61,0.5);
+			 	border-radius:num(8rem);
+			 	position:absolute;
+			 	bottom:num(8rem);
+			 	right:num(11rem);
+			 } 
+		}
+	    .p1{
+			@include hw(num(48rem),num(290rem));
+			margin:0 auto;
+			margin-top:num(15rem);
+			font-size:num(13rem);
+            color:#424242;
+		}
+		.d1son{
+			@include hw(num(46rem),num(290rem));
+			margin:0 auto;
+			.d1s{
+				float:left;
+				font-size:num(22rem);
+				font-weight:bolder;
+			}
+			.p2{
+			   height:num(46rem);
+			   margin-left:num(5rem);
+			   overflow:hidden;
+			   float:left;
+			   .p2s{
+			   	text-decoration:line-through;
+			   	font-size:num(9rem);
+			   	color:#999;
+			   }
+               .p2s2{
+					text-align:center;
+					font-size:num(11rem);
+					background:#ffe8ee;
+					color:#ff2255;
+                    @include hw(num(14rem),num(25rem))
+				}
+			}
+		}
+		.p3{
+			height:num(25rem);
+			margin-left:num(15rem);
+			font-size:num(11rem);
+			color:#999;
+			border-bottom:num(1rem) solid #ddd;
+		}
+        .d1son2{
+         	@include hw(num(33rem),num(290rem));
+			margin:0 auto;
+			overflow:hidden;
+			div{
+				float:left;
+				width:31%;
+				font-size:num(12rem);
+				color:#666;
+                text-align:center;
+                line-height:num(33rem);
+				img{
+					margin-bottom:num(-3rem);
+				    @include hw(num(14rem),num(14rem));	
+				}
+			}
+			span{
+					display:block;
+					margin-top:num(2rem);
+			}
+        } 
+        .d1son3{
+            height:num(3rem);
+            width:100%;
+            background:linear-gradient(to right,#ffffff 50%,#ffe6e8 50%, #ff5579 75%) no-repeat;
+            position:absolute;
+            left:0;
+            top:num(535rem);
+        }   
+	}
+     .d2{
+     	clear:both;
+     	height:num(147rem);
+     	background:#fff;
+     	margin-bottom:num(8rem);
+     	.d2p{
+     		@include hw(num(33rem),num(290rem));
+     		margin:0 auto;
+     		color:#999;
+     		line-height:num(33rem);
+     		font-size:num(11rem);
+     	}
+     	.d2son{
+     		border-bottom:num(1rem) solid #ddd;
+     		height:num(52rem);
+     		margin-left:num(15rem);
+     		
+     		p{
+     			@include hw(num(39rem),num(78rem));
+     		    background:#ff5479;
+     		    text-align:center;
+     		    border-radius:num(2rem);
+     		    margin-right:num(2rem);
+     		    font-size:num(15rem);
+     			float:left;
+     			color:#fff;
+     			span{
+     				font-size:num(11rem);
+     			}
+     		}
+     		.p4{
+     			@include hw(num(39rem),num(48rem));
+     		}
+     	}
+     	.d2son2{
+     		@include hw(num(34rem),num(290rem));
+     		margin:num(16rem) auto;
+     		.d2s{
+     			width:num(200rem);
+     			float:left;
+     			.d2ss{
+     				height:num(17rem);
+     				margin-bottom:num(2rem);	
+     				p{
+     					float:left;
+     					background:#f97417;
+     					font-size:num(12rem);
+     					color:#fff;
+     					text-align:center;
+     					line-height:num(15rem);
+     					@include hw(num(15rem),num(30rem));
+     				}
+     				span{
+     					 float:left;
+                         font-size:num(10rem);
+     					 color:#999;
+     				}
+     				.d2p2{
+     					background:#8b4efc;
+     				}
+     			}
+     		}
+     		p{
+     			height:num(34rem);
+     			float:right;
+                font-size:num(14rem);
+     			color:#999;   			
+     			line-height:num(34rem);
+     		}
+     	}
+     }
+     .d3{
+     	height:num(40rem);
+     	background:#fff;
+     	margin-bottom:num(8rem);
+     	.d3son{
+     		@include hw(num(40rem),num(290rem));
+	     	margin:0 auto;
+	     	
+	     	font-size:num(12rem);
+	     	
+	     	color:#666;					
+	     	line-height:num(40rem);
+	     	.d3p1{
+	     		float:left;
+	     	}
+	     	.d3p2{
+	     		float:right;
+	     		font-size:num(14rem);
+	     	}
+	    }
+     	
+     }
+     .d4{
+     	height:num(340rem);
+     	background:#fff;
+     	margin-bottom:num(8rem);
+     	.d4son{
+     		@include hw(num(35rem),num(290rem));
+     		margin:0 auto;
+	     	font-size:num(11rem);
+	     	color:#999;					
+	     	line-height:num(35rem);
+	     	.d4p1{
+	     		float:left;
+	     	}
+	     	.d4p2{
+	     		float:right;
+	     		font-size:num(14rem);
+	     	}
+     	}
+     	.d4son1{
+     		@include hw(num(50rem),num(290rem));
+     		margin:0 auto;
+     		p{
+     			float:left;
+     			font-size:num(12rem);
+     			color:#ff2255;
+     			background:#ffe8ee;
+     			text-align:center;
+     			line-height:num(20rem);
+     			margin-right:num(5rem);
+     			margin-top:num(5rem);
+     		}
+     		p:nth-child(1){
+     			@include hw(num(20rem),num(63rem));
+     		}
+     		p:nth-child(2){
+     			@include hw(num(20rem),num(77rem));
+     		}
+     		p:nth-child(3){
+     			@include hw(num(20rem),num(100rem));
+     		}
+     		p:nth-child(4){
+     			@include hw(num(20rem),num(76rem));
+     		}
+     	}
+     	.d4son2{
+     		height:num(110rem);
+     		padding:num(10rem) 0;
+     		border-bottom:num(1rem) solid #ddd;
+     		.d4s1{
+     			@include hw(num(34rem),num(290rem));
+     		    margin:0 auto;
+     		    img{
+     		    	float:left;
+     		    	@include hw(num(25rem),num(25rem));
+     		    	border-radius:50%;
+     		    }
+     		    p{
+     		    	float:left;
+     		    	margin-top:num(3rem);
+     		    	margin-left:num(5rem);
+     		    	font-size:num(12rem);
+     		    	color:#424242;
+     		    }
+     		}
+     	    .d4s2{
+     			@include hw(num(42rem),num(290rem));
+     		    margin:0 auto;
+     		    font-size:num(11rem);
+     		    color:#999;
+     		}
+     		.d4s3{
+     			@include hw(num(14rem),num(290rem));
+     		    margin:0 auto;
+     		    font-size:num(10rem);
+     		    color:#999;
+     		}
+     		.d4s4{
+     			@include hw(num(14rem),num(290rem));
+     		    margin:0 auto;
+     		    font-size:num(10rem);
+     		    color:#999;
+     		}
+     	}
+     	.d4son3{
+     		height:num(110rem);
+     		padding:num(10rem) 0;
+     		.d4s1{
+     			@include hw(num(34rem),num(290rem));
+     		    margin:0 auto;
+     		    img{
+     		    	float:left;
+     		    	@include hw(num(25rem),num(25rem));
+     		    	border-radius:50%;
+     		    }
+     		    p{
+     		    	float:left;
+     		    	margin-top:num(3rem);
+     		    	margin-left:num(5rem);
+     		    	font-size:num(12rem);
+     		    	color:#424242;
+     		    }
+     		}
+     	    .d4s2{
+     			@include hw(num(42rem),num(290rem));
+     		    margin:0 auto;
+     		    font-size:num(11rem);
+     		    color:#999;
+     		}
+     		.d4s3{
+     			@include hw(num(14rem),num(290rem));
+     		    margin:0 auto;
+     		    font-size:num(10rem);
+     		    color:#999;
+     		}
+     		.d4s4{
+     			@include hw(num(14rem),num(290rem));
+     		    margin:0 auto;
+     		    font-size:num(10rem);
+     		    color:#999;
+     		}
+     	}
+     }
+     .d5{
+     	height:num(135rem);
+     	background:#fff; 
+     	margin-bottom:num(8rem);
+         .d5son{
+         	padding-top:num(15rem);
+         	@include hw(num(40rem),num(290rem));
+         	margin:0 auto;
+         	position:relative;
+         	img{
+         		float:left;
+         		@include hw(num(40rem),num(40rem));
+         	}
+         	.d5s{
+         		@include hw(num(40rem),num(178rem));
+         		position:absolute;
+         		top:num(15rem);
+         		left:num(50rem);
+         		p:nth-child(1){
+         			margin-top:num(3rem);
+         			font-size:num(11rem);
+         		}
+         		p:nth-child(2){
+         			@include hw(num(15rem),num(68rem));
+         			margin-top:num(2rem);
+         			background:url(../img/star.png) no-repeat left top;
+         		}
+         	}
+         	.d5s1{
+         		float:right;
+         		text-align:center;
+         		color:#ff2255;
+         		font-size:num(12rem);
+         		border:num(1rem) solid #ff2255;
+         		line-height:num(23rem);
+         		@include hw(num(24rem),num(59rem));
+         	}
+         }
+         .d5son1{
+         	@include hw(num(54rem),num(290rem));
+         	margin:0 auto;
+         	margin-top:num(8rem);
+         	margin-top:num(12rem);
+         	div{
+         		float:left;
+         		@include hw(num(54rem),num(95rem));
+         	}
+         	.d5s2{
+         		text-align:center;
+         		font-size:num(11rem);
+         		border-right:num(1rem) solid #ddd;
+         		p:nth-child(1){
+         		  color:#333;
+         		}
+                p:nth-child(2){
+         		  color:#999;
+         		}
+         	}
+         	.d5s3{
+         		text-align:center;
+         		font-size:num(11rem);
+         		color:#999;
+         		span{
+         			font-size:num(8rem);
+         		    color:#ff2255;
+         		}
+         	}
+         }
+     }
+     .d6{
+     	height:num(7050rem);
+	    background:#fff;
+	    
+     	.d6son{
+	     	height:num(38rem);
+	     	border-bottom:num(1rem) solid #ddd;
+	     	ul{
+	     		@include hw(num(38rem),num(290rem));
+	         	margin:0 auto;
+	         	li{
+	         	  float:left;
+	              text-align:center;
+	         	  color:#333;
+	         	  font-size:num(12rem);
+	         	  line-height:num(38rem);
+	      		  @include hw(num(37rem),num(80rem)); 
+	      		  padding:0 num(5rem);  
+	      		  &:hover{
+	      		  	color:#ff2255;
+	      		  	border-bottom:num(1rem) solid #ff2255;
+	      		  }     		
+	         	}
+	     	}     		
+     	}
+     	.d6son1{
+     		.dot{
+     			@include hw(num(1rem),num(290rem)); 
+	     		margin:0 auto;
+	     		div{
+	     			float:left;
+	     		}
+     		    span{	
+	     			float:left;
+	     			@include hw(num(1rem),num(75rem)); 
+	     			background:#999;
+	     			margin-top:num(14rem);
+	     		}
+     		}
+     		.int{
+     			clear:both;
+               @include hw(num(62rem),num(290rem)); 
+	     		margin:num(12rem) auto;
+	     		font-size:num(11rem);
+	     		color:#999;
+	     		line-height:num(14rem);
+     		}
+     		.dot2{
+     			@include hw(num(1rem),num(290rem)); 
+	     		margin:0 auto;
+	     		position:relative;
+	     			p{
+	     			float:right;
+	     			margin-top:num(-14rem);
+	     		}
+     		    div{	
+	     			@include hw(num(1rem),num(75rem)); 
+	     			background:#999;
+	     			position:absolute;
+	     			right:num(5rem);
+	     			top:0;
+	     		}
+     		}	
+     	}
+     	.d6son2{
+     		@include hw(num(21rem),num(290rem)); 
+	     	margin:0 auto;
+	     	margin-top:num(10rem);
+	     	font-size:num(11rem);
+	     	color:num(#333);
+	     	line-height:num(21rem);
+     	}
+     	.d6son3{
+     		img{
+     			display:block;
+     			height:num(490rem);
+     			width:100%;
+     			margin-bottom:num(5rem);
+     		}
+     		.pic5{
+     			height:num(430rem);
+     			width:100%;
+     		}
+     		.d6p1{
+     			@include hw(num(21rem),num(290rem)); 
+		     	margin:0 auto;
+		     	margin-left:num(10rem);
+		     	font-size:num(11rem);
+		     	color:num(#333);
+		     	line-height:num(21rem);
+     		}
+     		.r{
+     			@include hw(num(60rem),num(290rem)); 
+		     	margin:0 auto;
+		     	p:nth-child(1){
+
+		     		color:#333;
+		     		font-size:num(12rem);
+		     	}
+		     	p:nth-child(2){
+		     		color:#999;
+		     		font-size:num(11rem);
+		     		line-height:num(20rem);
+		     	}
+     		}
+     		.exp{
+     			display:block;
+     			height:num(83rem);
+     			margin-bottom:num(5rem);
+     		}
+     	}
+     	.d6son4{
+     		@include hw(num(2050rem),num(290rem)); 
+	     	 margin:0 auto;
+	     	table{
+	     		border-collapse:collapse;
+	     	  tbody{
+	     		tr{
+	     		    @include hw(num(35rem),num(290rem)); 
+	     			th{
+	     				text-align:left;
+	     				
+	     				color:#999;
+	     				@include hw(num(35rem),num(80rem)); 
+                        line-height:num(35rem);
+                        border-bottom:num(1rem) solid #ddd;
+	     			}
+	     			.t1{
+	     				color:#eb4868;
+	     			}     
+	     	    }
+	     	    .tr1{
+                    font-size:num(12rem);
+	     	    }
+	     	    .tr2{
+	     	    	font-size:num(11rem);
+	     	    }
+	     	  }	     		
+	     	}
+	        .d6s{
+	        	height:num(28rem);
+	        	border-bottom:num(1rem) solid #ddd;
+	        	span{
+	        		font-weight:bolder;
+	        		display:inline-block;
+	        		font-size:num(11rem);
+	        		 line-height:num(28rem);
+	        		@include hw(num(28rem),num(100rem)); 
+	        	}
+	        	.sp1{
+	        		@include hw(num(28rem),num(70rem)); 
+	        		color:#999;
+	        	}
+	        	.sp2{
+	        		@include hw(num(28rem),num(150rem)); 
+	        		color:#eb4868;
+	        	}
+	        }
+	        img{
+     			display:block;
+     			width:100%;
+     			height:num(330rem);
+     			margin-bottom:num(5rem);
+     		}	
+     		.pic6{
+     			height:num(380rem);
+     		}     	
+     	
+        }     	
+        .d6son5{
+     		@include hw(num(745rem),num(290rem)); 
+            margin:0 auto;
+            .pic7{
+            	@include hw(num(174rem),num(89rem));
+            	float:left;
+        		margin:num(5rem) 0 0 num(7rem);
+        		margin-bottom:num(5rem);
+            	img{
+        			display:block;
+        			@include hw(num(141rem),num(89rem));
+        		}
+        		p{
+        			font-size:num(11rem);
+        			color:#999;
+        			white-space:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+        		}
+        		.picson{
+        			height:num(12rem);
+        			span{
+        				font-size:num(11rem);
+        				color:#999;
+        			}
+        			.pi1{
+        				float:left;
+        			}
+        			.pi2{
+        				float:left;
+        			}
+        			img{
+        				float:left;
+        				margin-top:num(2rem);
+        				margin-left:num(15rem);
+        				display:block;
+                        @include hw(num(12rem),num(13rem));
+        			}
+        		}
+        	}
+     	}
+     }
+	}
+	.footer{
+        background:#fff;
+        height:num(43rem);
+        width:100%;
+        position:fixed;
+        left:0;
+        bottom:0;
+        div{
+        		float:left;
+        	}
+        .f1{
+        	@include hw(num(43rem),num(54rem));
+        	border-right:num(1rem) solid #ddd;
+        	text-align:center;
+        	font-size:num(11rem);
+        	.fs1{
+        		display:block;
+        		@include hw(num(16rem),num(16rem));
+        		margin-left:num(20rem);
+        		background:url(../img/tb.png) no-repeat num(-20rem) num(-6rem);
+        	}
+        	.fs3{
+        		display:block;
+        		@include hw(num(16rem),num(16rem));
+        		margin-left:num(20rem);
+        		background:url(../img/tb.png) no-repeat num(-74rem) num(-7rem);
+        	}
+        	.fs4{
+        		display:block;
+        		@include hw(num(16rem),num(16rem));
+        		margin-left:num(20rem);
+        		background:url(../img/tb.png) no-repeat num(-128rem) num(-6rem);
+        	}
+        	.fs2{ 
+        		display:block;
+                margin-top:num(5rem);
+                color:#999;
+        	}
+        }
+        .f2{
+        	@include hw(num(43rem),num(77rem));
+        	text-align:center;
+        	line-height:num(43rem);
+        	font-size:num(11rem);
+        	background:#ffe6e8;
+        	color:#ff5777;
+        }
+        .f3{
+        	@extend .f2;
+        	color:#fff;
+        	background:#ff547b;
+        }
+	}
+}

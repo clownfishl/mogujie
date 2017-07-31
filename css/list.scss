@@ -1,0 +1,194 @@
+	@function num($n){
+		@return $n/20
+	}
+	html,body{
+	    height:100%;
+	    background:#f6f6f6;
+	}
+	*{
+		padding:0;
+		margin:0;
+	}
+	li{
+		list-style:none;
+	}
+	@mixin spa($col){
+    text-align:center;
+    display:inline-block;		
+    background:$col;
+}
+	@mixin hw($h,$w){
+		height:$h;
+		width:$w;
+	}
+	.header{
+    	height:num(275rem);
+    	background:#fff;
+    	padding-top:num(13rem);
+    	margin-bottom:num(9rem);
+    	.d1son{
+    		height:num(13rem);
+    		margin-left:num(100rem);
+    		margin-bottom:num(10rem);
+    		p{
+    			float:left;
+    			font-size:num(12rem);
+    		}
+    		.n1{
+    		height:num(2rem);
+    		width:num(25rem);
+    		background:#d9d9d9;
+    		margin-top:num(7rem);
+    	    }
+    	    .n2{
+    	      width:num(5rem);
+    	      margin:0 num(6rem);
+    	    }
+    	}
+    	.d1son2{
+    		height:num(252rem);
+    		div{
+    			float:left;
+    		}
+            .pic1{
+            	@include hw(num(71rem),num(80rem));
+            	text-align:center;
+            	background:#fff;
+            	font-size:num(11rem);
+            	color:#333;
+            	margin-top:num(6rem);
+            	img{
+                    border-radius:50%;
+            		@include hw(num(50rem),num(51rem));
+            	}
+            	p{
+            		margin-top:num(4rem);
+            	}
+            }
+    	}	
+    }
+    .center{
+    	height:num(127rem);
+    	background:#fff;
+    	padding-top:num(13rem);
+    	margin-bottom:num(9rem);
+    	.d2son{
+    		height:num(13rem);
+    		margin-left:num(90rem);
+    		margin-bottom:num(10rem);
+    		p{
+    			float:left;
+    			font-size:num(12rem);
+    		}
+    		.n1{
+    		height:num(2rem);
+    		width:num(25rem);
+    		background:#d9d9d9;
+    		margin-top:num(7rem);
+    	    }
+    	    .n2{
+    	      width:num(5rem);
+    	      margin:0 num(6rem);
+    	    }
+    	}
+    	.d2son2{
+    		height:num(71rem);
+    		div{
+    			float:left;
+    		}
+            .pic1{
+            	@include hw(num(71rem),num(80rem));
+            	text-align:center;
+            	background:#fff;
+            	font-size:num(11rem);
+            	color:#333;
+            	margin-top:num(6rem);
+            	img{
+            		@include hw(num(50rem),num(51rem));
+            	}
+            	p{
+            		margin-top:num(4rem);
+            	}
+            }
+    	}	    	
+    }
+    .footer{
+        height:num(4275rem);
+        width:100%;
+        padding-top:num(13rem);
+        margin-bottom:num(9rem);
+        .fson{
+            height:num(13rem);
+	    	margin-left:num(90rem);
+	    	margin-bottom:num(19rem);
+	    	p{
+	    		float:left;
+	    		font-size:num(12rem);
+	    	}
+	    	.n1{
+	    	height:num(2rem);
+	    	width:num(25rem);
+	    	background:#d9d9d9;
+	    	margin-top:num(7rem);
+	    	}
+	        .n2{
+	    	  width:num(5rem);
+	    	  margin:0 num(6rem);
+	    	 }  
+        }
+        .fson1{
+             height:num(30rem);
+             background:#ff0077;
+             color:#fff;
+             font-size:num(11rem);
+             overflow:hidden;
+            ul{
+            	li{
+                   float:left;
+                   @include hw(num(30rem),num(64rem));
+                   text-align:center;
+                   line-height:num(30rem);
+                   &:hover{
+                   	box-shadow:num(5rem) 0 num(5rem) #d90065;
+                   }
+            	}
+            }
+        }
+        .fson2{
+        	height:num(265rem);
+        	font-size:num(11rem);
+        	line-height:num(15rem);
+        	color:#5a6f7a;
+        	.pic2{
+        		background:#fff;
+        		float:left;
+        		margin:num(5rem) 0 0 num(7rem);
+        		@include hw(num(265rem),num(150rem));
+        		img{
+        			display:block;
+        			@include hw(num(195rem),num(150rem));
+        		}
+        		.pcs{
+        			@include hw(num(51rem),num(136rem));
+        			padding:num(7rem);
+        			.spa1{
+                    @include spa(#eff3f6);
+        			@include hw(num(15rem),num(30rem));
+        		    }
+        		    .spa2{
+        			@include spa(#f9e4a8);
+        			@include hw(num(15rem),num(60rem));
+        			margin-top:num(2rem);
+        		    }
+        		    p{
+        		    	margin-top:num(8rem);
+        		    	span{
+        		    		margin-left:num(83rem);
+        		    	}
+        		    }
+
+        		}
+        		
+        	}
+        }
+    }

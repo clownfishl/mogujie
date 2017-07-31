@@ -1,0 +1,426 @@
+@function num($n){
+	@return $n/20
+}
+html,body{
+	height:100%;
+}
+*{
+	padding:0;
+	margin:0;
+}
+@mixin style($value,$col){
+	margin-top:$value;
+    color:$col;
+}
+@mixin sta($h,$w){
+	height:$h;
+    width:$w;
+    background:#000;
+    font-size:num(9rem);
+    border-radius:num(3rem);
+    color:#fff;
+    text-align:center;
+}
+@mixin hw($he,$wi){
+	height:$he;
+    width:$wi;
+}
+@mixin spa($col){
+    text-align:center;
+    display:inline-block;		
+    background:$col;
+}
+#main{
+	height:100%;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+.header{
+    	height:num(38rem);
+		width:100%;
+		background:#fff;
+	    overflow:hidden;
+		position:fixed;
+		top:0;
+		left:0;
+		.img1{
+			height:num(30rem);
+		    width:num(30rem);
+	        margin:num(5rem) num(13rem) 0 num(15rem);
+	        float:left;
+		}
+		.inp{
+			 height:num(26rem);
+			 width:65%;
+			 line-height:num(26rem);
+			 background:#eee;
+			 overflow:hidden;
+	         margin-top:num(7rem);
+	         margin-bottom:num(7rem);
+			 float:left;
+			 .img2{
+			 	height:num(16rem);
+		        width:num(16rem);
+		        float:left;
+		        margin:num(5rem) num(5rem) num(5rem) num(5rem);
+			 }
+			 input{
+			 	width:50%;
+	            float:left;
+	            margin-top:num(6rem);
+	            background:#eee;
+	            outline:none;
+	            border:none;
+			 }
+		}
+		.img3{
+			height:num(22rem);
+		    width:num(22rem);
+		    margin:num(9rem) num(15rem) 0 num(13rem);
+		    float:right;
+		}
+}
+.center{
+	flex:1;
+	margin:0 0 num(38rem) 0;
+	background:#f6f6f6;
+	border-top:num(1rem) solid #ddd;
+	.pic{
+		height:num(166rem);
+		width:100%;
+		display:block;
+	}
+    .d{
+    	height:num(98rem);
+    	width:100%;
+    	background:#fff;
+    	margin-bottom:num(9rem);
+    	div{
+    		float:left;
+    	}
+    	.dson1{
+    		height:num(98rem);
+    		width:num(106rem);
+    		font-size:num(12rem);
+    		text-align:center;
+    		p:nth-child(1){
+    			@include style(num(10rem),#ff6801)
+    		}
+    		p:nth-child(2){
+    			@include style(num(6rem),#666)
+    		}
+    		img{
+    			height:num(42rem);
+    			width:num(42rem);
+    		}
+    	}
+    	.space{
+    		height:num(65rem);
+    		width:num(1rem);
+    		background:#eee;
+    		margin:num(15rem) 0;
+    	}
+    }
+    .d1{
+    	height:(num(158rem));
+    	width:100%;
+    	background:#fff;
+        margin-bottom:num(9rem);
+    	.d1son{
+    		height:num(17rem);
+    		padding:num(14rem) num(15rem) num(11rem) num(15rem);
+    		font-size:num(12rem);
+    		p{
+    			float:left;
+    			margin-right:num(15rem);
+    		}
+    		.d1son1{
+    			float:left;
+    			div{
+    				float:left;
+    			}
+    			#s{
+                  padding-top:num(1rem);
+                   @include sta(num(16rem),num(19rem))
+    			}
+    			#o{
+                    padding-top:num(1rem);
+                   @include sta(num(16rem),num(19rem))
+    			}
+    			#n{
+                    padding-top:num(1rem);
+                   @include sta(num(16rem),num(19rem))
+    			}
+    			.sp{
+    				height:num(17rem);
+    				width:num(8rem);
+    				background:#fff;
+    				text-align:center;
+    			}
+    		}
+    		img{
+    			float:right;
+    			height:num(10rem);
+    			width:num(45rem);
+    		}
+    	}
+    	.d1son2{
+            height:num(123rem);
+            margin-left:num(15rem);   
+            .ss{
+            	margin:num(2rem) num(8rem) num(3rem) 0;
+            	height:num(110rem);
+                width:num(78rem);
+                float:left;
+                p:nth-child(2){
+                	font-size:num(12rem);
+                	color:#666;
+                }
+                p:nth-child(3){
+                	font-size:num(9rem);
+                	color:#ff2255;
+                	span{
+                		margin-left:num(3rem);
+                		color:#888;
+                		text-decoration:line-through;
+                	}
+                }
+                img{
+            	height:num(64rem);
+    			width:num(64rem);
+                }
+            }
+    	}
+    }
+    .d2{
+    	height:num(280rem);
+    	width:100%;
+    	background:#fff;
+    	font-size:num(11rem);
+    	margin-bottom:num(9rem);
+    	.d2son{
+    		height:(num(34rem));
+    		line-height:num(34rem);
+    		color:#333;
+    		margin-left:num(9rem);
+    	}
+    	.d2son1{
+            height:num(140rem);
+            width:100%;
+            text-align:center;
+            overflow:hidden;
+            .s1{
+            	float:left;
+            	border-top:num(1rem) solid #ddd;
+            	border-right:num(1rem) solid #ddd;
+            	border-bottom:num(1rem) solid #ddd;
+            	box-sizing:border-box;
+            	@include hw(num(140rem),num(160rem));
+            	padding-top:num(22rem);
+            	p:nth-child(1){	
+                	color:#333;
+                }
+                p:nth-child(2){
+                	color:#ff5f7e;
+                }
+            	img{
+            	@include hw(num(83rem),num(83rem));
+                }
+            }
+            .s2{
+            	float:right;
+            	@include hw(num(70rem),num(160rem));
+            	border-top:num(1rem) solid #ddd;
+                border-bottom:num(1rem) solid #ddd;
+            	box-sizing:border-box;
+                .s2son{
+                	overflow:hidden;
+                	float:left;
+                	padding-top:num(20rem);
+                	padding-left:num(10rem);
+                	p:nth-child(1){	
+                	    color:#333;
+                    }
+	                p:nth-child(2){
+	                	color:#ff5f7e;
+	                }
+                }
+            	img{
+                    float:right;
+            	    @include hw(num(68rem),num(68rem));
+                }
+            }
+            .s22{
+            	border-top:none;
+            }
+    	}
+    	.d2son2{
+    		height:num(110rem);
+	    	width:100%;
+	    	div{
+	    		float:left;
+	    	}
+	    	.s3{
+	    		height:num(110rem);
+	    		width:num(106rem);
+	    		font-size:num(12rem);
+	    		border-right:num(1rem) solid #ddd;
+	    		box-sizing:border-box;
+	    		text-align:center;
+	    		p:nth-child(1){
+	    			@include style(num(10rem),#ff6801)
+	    		}
+	    		p:nth-child(2){
+	    			@include style(0,#666)
+	    		}
+	    		img{
+	    			height:num(65rem);
+	    			width:num(65rem);
+	    		}
+	    	}
+	    	.s4{
+	    		border-right:none;
+	    	}
+    	}
+    }
+
+    .d3{
+    	height:num(352rem);
+    	background:#fff;
+    	padding-top:num(13rem);
+    	margin-bottom:num(9rem);
+    	.d3son{
+    		height:num(13rem);
+    		margin-left:num(90rem);
+    		margin-bottom:num(10rem);
+    		p{
+    			float:left;
+    			font-size:num(12rem);
+    		}
+    		.n1{
+    		height:num(2rem);
+    		width:num(25rem);
+    		background:#d9d9d9;
+    		margin-top:num(7rem);
+    	    }
+    	    .n2{
+    	      width:num(5rem);
+    	      margin:0 num(6rem);
+    	    }
+    	}
+    	.d3son2{
+    		height:num(329rem);
+    		div{
+    			float:left;
+    		}
+            .pic1{
+            	@include hw(num(71rem),num(80rem));
+            	text-align:center;
+            	background:#fff;
+            	font-size:num(11rem);
+            	color:#333;
+            	margin-top:num(6rem);
+            	img{
+            		@include hw(num(50rem),num(51rem));
+            	}
+            	p{
+            		margin-top:num(4rem);
+            	}
+            }
+    	}	
+    }
+    .d4{
+        height:num(1095rem);
+        width:100%;
+        padding-top:num(13rem);
+        margin-bottom:num(9rem);
+        .d4son{
+            height:num(13rem);
+	    	margin-left:num(90rem);
+	    	margin-bottom:num(19rem);
+	    	p{
+	    		float:left;
+	    		font-size:num(12rem);
+	    	}
+	    	.n1{
+	    	height:num(2rem);
+	    	width:num(25rem);
+	    	background:#d9d9d9;
+	    	margin-top:num(7rem);
+	    	}
+	        .n2{
+	    	  width:num(5rem);
+	    	  margin:0 num(6rem);
+	    	 }  
+        }
+        .d4son1{
+        	height:num(265rem);
+        	font-size:num(11rem);
+        	line-height:num(15rem);
+        	color:#5a6f7a;
+           
+        	.pic2{
+        		background:#fff;
+        		float:left;
+        		margin:num(5rem) 0 0 num(7rem);
+        		@include hw(num(265rem),num(150rem));
+        		img{
+        			display:block;
+        			@include hw(num(195rem),num(150rem));
+        		}
+        		.pcs{
+        			@include hw(num(51rem),num(136rem));
+        			padding:num(7rem);
+        			.spa1{
+                    @include spa(#eff3f6);
+        			@include hw(num(15rem),num(30rem));
+        		    }
+        		    .spa2{
+        			@include spa(#f9e4a8);
+        			@include hw(num(15rem),num(60rem));
+        			margin-top:num(2rem);
+        		    }
+        		    p{
+        		    	margin-top:num(8rem);
+        		    	span{
+        		    		margin-left:num(83rem);
+        		    	}
+        		    }
+
+        		}
+        		
+        	}
+        }
+    }
+	
+
+
+}
+.footer{
+	height:num(39rem);
+	width:100%;
+	border-top:num(1rem) solid #ddd;
+	border-bottom:num(1rem) solid #ddd;
+	position:fixed;
+	bottom:0;
+	left:0;
+	background:#fefefe;
+	padding-left:num(30rem);
+	div{
+		float:left;
+		width:25%;
+		margin-top:num(2rem);
+		font-size:num(10rem);
+		color:#666;
+		img{
+			@include hw(num(17rem),num(17rem));
+		}
+		p{
+			margin-left:num(-2rem);
+		}
+		.pp{
+			color:#ff5777;	
+		}
+	}
+}	
+}
