@@ -20,7 +20,9 @@ li{
 	height:100%;
 	width:100%;
 	display:flex;
+    z-index:2;
 	flex-direction:column;
+   
 	.header{
 		flex:1;
 		margin-bottom:num(43rem);
@@ -405,13 +407,13 @@ li{
      	height:num(7050rem);
 	    background:#fff;
 	    
-     	.d6son{
+     	#d6son{
 	     	height:num(38rem);
 	     	border-bottom:num(1rem) solid #ddd;
-	     	ul{
+	     	.d6so{
 	     		@include hw(num(38rem),num(290rem));
 	         	margin:0 auto;
-	         	li{
+	         	.d6sn{
 	         	  float:left;
 	              text-align:center;
 	         	  color:#333;
@@ -612,7 +614,7 @@ li{
         	}
      	}
      }
-	}
+
 	.footer{
         background:#fff;
         height:num(43rem);
@@ -667,3 +669,32 @@ li{
         }
 	}
 }
+
+ #s{
+            position:fixed;
+            left:0;
+            top:0;
+            z-index:3;
+            background:#fff;
+            height:num(38rem);
+            width:100%;
+            border-bottom:num(1rem) solid #ddd;
+            .ds{
+                @include hw(num(38rem),num(290rem));
+                margin:0 auto;
+                .dsn{
+                  float:left;
+                  text-align:center;
+                  color:#333;
+                  font-size:num(12rem);
+                  line-height:num(38rem);
+                  @include hw(num(37rem),num(80rem)); 
+                  padding:0 num(5rem);  
+                  &:hover{
+                    color:#ff2255;
+                    border-bottom:num(1rem) solid #ff2255;
+                  }             
+                }
+            }           
+        }
+    }
